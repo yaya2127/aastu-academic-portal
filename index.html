@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AASTU Student & Academic Management System - University portal for course registration, grades, timetable, and campus announcements.">
+  <title>AASTU Student Portal | Addis Ababa Science & Technology University</title>
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-banner">
+    <div class="container banner-flex">
+      <span><i class="fas fa-bell"></i> <strong>AASTU Notice:</strong> 2026/2027 Academic Year Semester Course Registration is now OPEN for 5th-Year Engineering Students.</span>
+      <a href="https://www.aastu.edu.et/" target="_blank" rel="noopener" class="banner-link">AASTU Official Site <i class="fas fa-external-link-alt"></i></a>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="portal-header">
+    <div class="container header-flex">
+      <a href="#" class="portal-brand">
+        <div class="brand-logo">AASTU</div>
+        <div class="brand-text">
+          <span class="univ-name">Addis Ababa Science & Technology University</span>
+          <span class="portal-title">Academic & Student Management System</span>
+        </div>
+      </a>
+
+      <nav class="portal-nav">
+        <button class="nav-btn active" data-tab="dashboard"><i class="fas fa-chart-line"></i> Dashboard</button>
+        <button class="nav-btn" data-tab="registration"><i class="fas fa-book-open"></i> Course Registration</button>
+        <button class="nav-btn" data-tab="grades"><i class="fas fa-award"></i> Grades & Transcript</button>
+        <button class="nav-btn" data-tab="announcements"><i class="fas fa-bullhorn"></i> Announcements</button>
+      </nav>
+
+      <div class="user-profile-badge">
+        <div class="avatar-circle">YK</div>
+        <div class="user-info">
+          <span class="user-name">Yared Kinetibeb</span>
+          <span class="user-role">5th-Year Computer Eng.</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container main-content">
+
+    <!-- Student Welcome Profile Card -->
+    <section class="student-hero-card">
+      <div class="hero-profile-info">
+        <span class="badge-tag"><i class="fas fa-university"></i> Computer Engineering Department</span>
+        <h2>Welcome back, Yared Kinetibeb Tesfaye 👋</h2>
+        <p class="student-meta">
+          <span><strong>Student ID:</strong> ETS0001/15</span> &nbsp;|&nbsp;
+          <span><strong>Academic Year:</strong> 5th Year (Senior)</span> &nbsp;|&nbsp;
+          <span><strong>Degree:</strong> B.Sc. in Computer Engineering</span> &nbsp;|&nbsp;
+          <span><strong>Status:</strong> Enrolled (Honors)</span>
+        </p>
+      </div>
+
+      <div class="student-stats-grid">
+        <div class="stat-box">
+          <div class="stat-value">3.78</div>
+          <div class="stat-label">Cumulative GPA</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value">142</div>
+          <div class="stat-label">Completed ECTS</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value">6</div>
+          <div class="stat-label">Active Courses</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 1: Dashboard -->
+    <div class="tab-panel active" id="panel-dashboard">
+      <div class="grid-2col">
+        
+        <!-- Enrolled Courses Overview -->
+        <div class="card-panel">
+          <div class="panel-header">
+            <h3><i class="fas fa-laptop-code"></i> Enrolled Courses (Current Semester)</h3>
+            <span class="pill-badge">6 Courses Enrolled</span>
+          </div>
+
+          <div class="course-list">
+            <div class="course-item">
+              <div class="course-icon"><i class="fas fa-microchip"></i></div>
+              <div class="course-details">
+                <h4>CoEng-5101: Embedded Systems Architecture & Design</h4>
+                <p>Instructor: Dr. Abebe T. | ECTS: 6 | Schedule: Mon/Wed 08:30 AM</p>
+              </div>
+              <span class="status-pill success">Active</span>
+            </div>
+
+            <div class="course-item">
+              <div class="course-icon"><i class="fas fa-network-wired"></i></div>
+              <div class="course-details">
+                <h4>CoEng-5102: Advanced Distributed Systems & Web APIs</h4>
+                <p>Instructor: Eng. Samuel M. | ECTS: 5 | Schedule: Tue/Thu 10:00 AM</p>
+              </div>
+              <span class="status-pill success">Active</span>
+            </div>
+
+            <div class="course-item">
+              <div class="course-icon"><i class="fas fa-robot"></i></div>
+              <div class="course-details">
+                <h4>CoEng-5103: Agentic AI & Machine Learning Systems</h4>
+                <p>Instructor: Dr. Helen G. | ECTS: 6 | Schedule: Wed/Fri 01:30 PM</p>
+              </div>
+              <span class="status-pill success">Active</span>
+            </div>
+
+            <div class="course-item">
+              <div class="course-icon"><i class="fas fa-project-diagram"></i></div>
+              <div class="course-details">
+                <h4>CoEng-5104: Senior Engineering Capstone Project I</h4>
+                <p>Instructor: Department Committee | ECTS: 8 | Schedule: Laboratory</p>
+              </div>
+              <span class="status-pill success">Active</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Actions & Schedule -->
+        <div class="card-panel">
+          <div class="panel-header">
+            <h3><i class="fas fa-calendar-alt"></i> Today's Schedule & Academic Tools</h3>
+          </div>
+
+          <div class="schedule-timeline">
+            <div class="timeline-slot">
+              <span class="slot-time">08:30 AM - 10:30 AM</span>
+              <div class="slot-desc">
+                <strong>CoEng-5101 Lab: Embedded Systems</strong>
+                <p>Building 404, Hardware Simulation Lab</p>
+              </div>
+            </div>
+
+            <div class="timeline-slot">
+              <span class="slot-time">01:30 PM - 03:30 PM</span>
+              <div class="slot-desc">
+                <strong>CoEng-5103: Agentic AI Systems</strong>
+                <p>Auditorium B, Computer Science Block</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-links-box">
+            <h4>Academic Resources</h4>
+            <div class="links-flex">
+              <a href="https://www.aastu.edu.et/" target="_blank" rel="noopener" class="resource-btn"><i class="fas fa-globe"></i> AASTU Portal</a>
+              <button class="resource-btn" onclick="alert('Digital Library Pass: ACTIVE (AASTU-LIB-8841)')"><i class="fas fa-book"></i> E-Library Access</button>
+              <button class="resource-btn" onclick="alert('Transcript Download Request Received!')"><i class="fas fa-file-pdf"></i> Request Official Transcript</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tab 2: Course Registration -->
+    <div class="tab-panel" id="panel-registration">
+      <div class="card-panel">
+        <div class="panel-header">
+          <h3><i class="fas fa-plus-circle"></i> Available Senior Courses for Registration</h3>
+          <span class="pill-badge" id="selected-ects">Selected ECTS: 0 / 30 Max</span>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Select</th>
+              <th>Course Code</th>
+              <th>Course Title</th>
+              <th>Department</th>
+              <th>ECTS</th>
+              <th>Instructor</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" class="course-check" data-ects="6" data-title="CoEng-5101 Embedded Systems Architecture"></td>
+              <td><strong>CoEng-5101</strong></td>
+              <td>Embedded Systems Architecture & Design</td>
+              <td>Computer Engineering</td>
+              <td>6</td>
+              <td>Dr. Abebe T.</td>
+              <td><span class="status-pill registered">Registered</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" class="course-check" data-ects="5" data-title="CoEng-5102 Advanced Web APIs"></td>
+              <td><strong>CoEng-5102</strong></td>
+              <td>Advanced Distributed Systems & Web APIs</td>
+              <td>Computer Engineering</td>
+              <td>5</td>
+              <td>Eng. Samuel M.</td>
+              <td><span class="status-pill registered">Registered</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" class="course-check" data-ects="6" data-title="CoEng-5103 Agentic AI Systems"></td>
+              <td><strong>CoEng-5103</strong></td>
+              <td>Agentic AI & Machine Learning Systems</td>
+              <td>Computer Engineering</td>
+              <td>6</td>
+              <td>Dr. Helen G.</td>
+              <td><span class="status-pill registered">Registered</span></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" class="course-check" data-ects="5" data-title="CoEng-5105 Real-Time Operating Systems"></td>
+              <td><strong>CoEng-5105</strong></td>
+              <td>Real-Time Operating Systems (RTOS)</td>
+              <td>Computer Engineering</td>
+              <td>5</td>
+              <td>Dr. Tadesse K.</td>
+              <td><button class="btn-action enroll-btn">Enroll</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" class="course-check" data-ects="4" data-title="CoEng-5106 Network Security Protocols"></td>
+              <td><strong>CoEng-5106</strong></td>
+              <td>Network Security & Cryptography</td>
+              <td>Computer Engineering</td>
+              <td>4</td>
+              <td>Eng. Fitsum A.</td>
+              <td><button class="btn-action enroll-btn">Enroll</button></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="registration-footer">
+          <button class="btn btn-primary" id="confirm-reg-btn"><i class="fas fa-check-circle"></i> Confirm Registration</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Grades & Transcript -->
+    <div class="tab-panel" id="panel-grades">
+      <div class="card-panel">
+        <div class="panel-header">
+          <h3><i class="fas fa-award"></i> Academic Performance & Grade Record</h3>
+          <div class="filter-controls">
+            <label for="sem-select">Filter Semester:</label>
+            <select id="sem-select">
+              <option value="all">All Semesters</option>
+              <option value="y4s2">Year 4 - Semester II</option>
+              <option value="y4s1">Year 4 - Semester I</option>
+              <option value="y3s2">Year 3 - Semester II</option>
+            </select>
+          </div>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Course Code</th>
+              <th>Course Title</th>
+              <th>Credit Hours (ECTS)</th>
+              <th>Letter Grade</th>
+              <th>Grade Points</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CoEng-4101</td>
+              <td>Software Engineering & System Architecture</td>
+              <td>6</td>
+              <td><span class="grade-badge grade-a">A+</span></td>
+              <td>4.0</td>
+              <td>Passed</td>
+            </tr>
+            <tr>
+              <td>CoEng-4102</td>
+              <td>Microcontrollers & Hardware Interfacing</td>
+              <td>6</td>
+              <td><span class="grade-badge grade-a">A</span></td>
+              <td>4.0</td>
+              <td>Passed</td>
+            </tr>
+            <tr>
+              <td>CoEng-4103</td>
+              <td>Database Management Systems</td>
+              <td>5</td>
+              <td><span class="grade-badge grade-a">A</span></td>
+              <td>4.0</td>
+              <td>Passed</td>
+            </tr>
+            <tr>
+              <td>CoEng-4104</td>
+              <td>Computer Architecture & Assembly</td>
+              <td>5</td>
+              <td><span class="grade-badge grade-b">A-</span></td>
+              <td>3.75</td>
+              <td>Passed</td>
+            </tr>
+            <tr>
+              <td>CoEng-4105</td>
+              <td>Object-Oriented Programming (C++/Java)</td>
+              <td>5</td>
+              <td><span class="grade-badge grade-a">A+</span></td>
+              <td>4.0</td>
+              <td>Passed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tab 4: Announcements -->
+    <div class="tab-panel" id="panel-announcements">
+      <div class="card-panel">
+        <div class="panel-header">
+          <h3><i class="fas fa-bullhorn"></i> Official AASTU Campus Announcements</h3>
+        </div>
+
+        <div class="announcement-feed">
+          <div class="notice-item">
+            <div class="notice-date">AUG 2026</div>
+            <div class="notice-content">
+              <h4>Senior Capstone Project Defense Timeline Announced</h4>
+              <p>All 5th-year Computer Engineering undergraduate students must submit their initial capstone project proposals by August 30. Lab resources in Block 404 are open for hardware assembly.</p>
+              <span class="notice-author">Issued by: AASTU Department of Computer Engineering</span>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">JUL 2026</div>
+            <div class="notice-content">
+              <h4>Virtual AI & Software Engineering Workshop Registration</h4>
+              <p>In collaboration with partner academies, AASTU students can register for online certifications in agentic AI and full-stack web architectures.</p>
+              <span class="notice-author">Issued by: AASTU ICT Directorate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="portal-footer">
+    <div class="container footer-flex">
+      <p>&copy; 2026 Addis Ababa Science and Technology University (AASTU). All rights reserved.</p>
+      <p>Developed by <strong>Yared Kinetibeb Tesfaye</strong> | 5th-Year Computer Engineering Senior</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
