@@ -1,0 +1,8 @@
+# Override GitHub Linguist language stats
+# Ignore HTML and CSS template/stylesheet bytes so GitHub counts Go & TypeScript as primary languages
+
+index.html linguist-vendored
+css/* linguist-vendored
+*.css linguist-vendored
+public/* linguist-vendored
+docs/* linguist-vendored
