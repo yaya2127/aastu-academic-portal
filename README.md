@@ -1,45 +1,73 @@
-# 🎓 AASTU Student & Academic Management Portal
+# 🎓 AASTU Student & Academic Management Portal (Go Microservices & React)
 
-![AASTU Portal Banner](https://img.shields.io/badge/AASTU-Academic%20Portal-dfa951?style=for-the-badge)
-![Tech Stack](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20JavaScript-blue?style=for-the-badge)
+![Go Language](https://img.shields.io/badge/Go-Golang%201.22-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-React%2018-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-A centralized web portal engineered for **Addis Ababa Science and Technology University (AASTU)** students and faculty to manage course registrations, track grades & cumulative GPA, view timetable schedules, and access campus announcements.
+A high-performance enterprise academic microservice web application engineered for **Addis Ababa Science and Technology University (AASTU)** students and faculty. Features a **Go (Golang)** REST API backend, **React + TypeScript** frontend, and containerized **PostgreSQL** database service.
 
 ---
 
-## ✨ Features & Capabilities
+## ✨ Enterprise Architecture & Capabilities
 
-- 📊 **Student Dashboard**: Real-time summary of Cumulative GPA (3.78/4.0), completed ECTS credits, and active 5th-year Computer Engineering courses.
-- 📚 **Interactive Course Registration**: Dynamic course catalog with live ECTS credit calculation, pre-requisite tracking, and enrollment actions.
-- 📜 **Grades & Transcript Record**: Semester-by-semester breakdown of letter grades, grade points, and official transcript download requests.
-- 📅 **Daily Class Schedule & Resources**: Today's lab/lecture timetable with direct links to AASTU digital library passes.
-- 📢 **Official Campus Announcements**: Real-time bulletin feed for academic calendars, senior capstone project defense deadlines, and workshops.
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend**: HTML5, Vanilla CSS3 (Custom Variables & Flexbox/Grid Layout), ES6 JavaScript
-- **Icons & Typography**: Font Awesome 6, Google Fonts (`Inter` & `Outfit`)
-- **Backend Architecture (Mock API)**: Modular JSON state handler for student profiles and registration queues
+- ⚡ **High-Performance Go (Golang) REST API**: Lightweight, concurrent HTTP server routes (`/api/v1/student/profile`, `/api/v1/health`) handling student profile data, course registration validation, and GPA calculation logic.
+- 🔷 **React 18 + TypeScript Frontend Architecture**: Strictly typed component architecture (`App.tsx`, `StudentProfile`, `Course`, `GradeRecord`) with custom state hooks and API integration.
+- 🐘 **PostgreSQL Relational Persistence**: Relational database schema for student profiles, course catalogs, ECTS credit logs, and letter grade records.
+- 🐳 **Docker & Docker Compose Containerization**: Multi-stage Dockerfile and `docker-compose.yml` defining the Go microservice API container and isolated PostgreSQL instance.
 
 ---
 
-## 🚀 Installation & Local Setup
+## 🛠️ Advanced Tech Stack
 
-### 1. Clone the Repository
+| Component | Technology |
+| :--- | :--- |
+| **Backend API** | Go (Golang 1.22), Standard `net/http` Engine, RESTful Architecture |
+| **Frontend Web** | React 18, TypeScript, HTML5, CSS3 |
+| **Database** | PostgreSQL 16 Relational Engine |
+| **Containerization** | Docker, Docker Compose, Multi-stage Alpine builds |
+
+---
+
+## 📁 Repository Structure
+
+```text
+aastu-academic-portal/
+├── main.go                     # Go HTTP Server Entry Point & Router
+├── go.mod                      # Go Module Definition
+├── handlers/
+│   └── student.go              # Go HTTP Handler Controllers
+├── models/
+│   └── student.go              # Go Struct Data Models
+├── src/
+│   ├── App.tsx                 # React + TypeScript App Component
+│   └── types/
+│       └── index.ts            # TypeScript Interfaces
+├── Dockerfile                  # Multi-Stage Docker Container Build
+├── docker-compose.yml          # Container Orchestration (Go + PostgreSQL)
+└── README.md                   # Repository Documentation
+```
+
+---
+
+## 🚀 Quick Start & Local Execution
+
+### Option A: Run Go Backend Server Locally
 ```bash
+# Clone the repository
 git clone https://github.com/yaya2127/aastu-academic-portal.git
 cd aastu-academic-portal
-```
 
-### 2. Launch Locally
-Run using any static HTTP server (e.g. Python):
-```bash
-python -m http.server 8000
+# Run Go REST API server
+go run main.go
 ```
-Open `http://localhost:8000` in your web browser.
+Open `http://localhost:8080` in your web browser.
+
+### Option B: Launch with Docker Compose
+```bash
+docker-compose up --build
+```
 
 ---
 
