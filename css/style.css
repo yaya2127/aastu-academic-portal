@@ -410,17 +410,27 @@ body {
 
 /* Responsive Mobile & Tablet Layout */
 @media (max-width: 992px) {
+  .top-banner { font-size: 0.75rem; }
+  .banner-flex { flex-direction: column; text-align: center; gap: 6px; }
+  
   .header-flex { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .portal-nav { flex-wrap: wrap; width: 100%; justify-content: space-between; }
+  .user-profile-badge { width: 100%; justify-content: center; }
+
+  .student-hero-card { flex-direction: column; text-align: center; gap: 20px; padding: 24px; }
+  .student-stats-grid { flex-wrap: wrap; justify-content: center; width: 100%; }
+
   .grid-2col { grid-template-columns: 1fr; gap: 20px; }
-  .student-card { flex-direction: column; text-align: center; gap: 16px; }
-  .student-stats { justify-content: center; }
-  .nav-tabs { overflow-x: auto; flex-wrap: nowrap; white-space: nowrap; padding-bottom: 6px; }
+  
+  .data-table { display: block; width: 100%; overflow-x: auto; white-space: nowrap; }
 }
 
 @media (max-width: 640px) {
-  .student-stats { grid-template-columns: repeat(2, 1fr); width: 100%; }
-  .data-table { display: block; overflow-x: auto; white-space: nowrap; }
-  .course-item { flex-direction: column; align-items: flex-start; }
-  .notice-item { flex-direction: column; }
+  .student-stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); width: 100%; }
+  .stat-box { padding: 12px; }
+  .stat-value { font-size: 1.4rem; }
+  
+  .course-item { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .notice-item { flex-direction: column; gap: 12px; }
   .notice-date { width: 100%; height: 36px; }
 }
