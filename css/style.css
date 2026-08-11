@@ -410,27 +410,59 @@ body {
 
 /* Responsive Mobile & Tablet Layout */
 @media (max-width: 992px) {
-  .top-banner { font-size: 0.75rem; }
-  .banner-flex { flex-direction: column; text-align: center; gap: 6px; }
+  .container { width: 100%; padding: 0 12px; }
   
-  .header-flex { flex-direction: column; align-items: flex-start; gap: 14px; }
-  .portal-nav { flex-wrap: wrap; width: 100%; justify-content: space-between; }
-  .user-profile-badge { width: 100%; justify-content: center; }
-
-  .student-hero-card { flex-direction: column; text-align: center; gap: 20px; padding: 24px; }
-  .student-stats-grid { flex-wrap: wrap; justify-content: center; width: 100%; }
-
-  .grid-2col { grid-template-columns: 1fr; gap: 20px; }
+  .top-banner { font-size: 0.72rem; }
+  .banner-flex { flex-direction: column; text-align: center; gap: 4px; }
   
-  .data-table { display: block; width: 100%; overflow-x: auto; white-space: nowrap; }
+  .header-flex { flex-direction: column; align-items: stretch; gap: 12px; }
+  
+  .portal-brand { justify-content: flex-start; }
+  .brand-logo { flex-shrink: 0; }
+  .univ-name { font-size: 0.9rem; word-break: normal; }
+  .portal-title { font-size: 0.72rem; }
+  
+  .portal-nav {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    gap: 6px;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-btn {
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
+  
+  .user-profile-badge { width: 100%; justify-content: space-between; }
+
+  .student-hero-card { flex-direction: column; text-align: center; gap: 16px; padding: 18px; }
+  .student-meta span { display: block; margin-bottom: 4px; }
+  .student-stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); width: 100%; gap: 8px; }
+  .stat-box { padding: 10px 6px; }
+  .stat-value { font-size: 1.3rem; }
+  .stat-label { font-size: 0.68rem; }
+
+  .grid-2col { display: flex; flex-direction: column; gap: 16px; width: 100%; }
+  .card-panel { width: 100%; padding: 16px; margin-bottom: 16px; overflow: hidden; }
+  
+  .panel-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  
+  .data-table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  
+  .course-item { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .notice-item { flex-direction: column; gap: 10px; }
+  .notice-date { width: 100%; height: 32px; }
+  
+  .footer-flex { flex-direction: column; text-align: center; gap: 8px; }
 }
 
-@media (max-width: 640px) {
-  .student-stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); width: 100%; }
-  .stat-box { padding: 12px; }
-  .stat-value { font-size: 1.4rem; }
-  
-  .course-item { flex-direction: column; align-items: flex-start; gap: 10px; }
-  .notice-item { flex-direction: column; gap: 12px; }
-  .notice-date { width: 100%; height: 36px; }
+@media (max-width: 480px) {
+  .student-stats-grid { grid-template-columns: 1fr; }
+  .brand-text { max-width: 220px; }
+  .univ-name { font-size: 0.82rem; }
 }
