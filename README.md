@@ -83,3 +83,7 @@ Developed by **Yared Kinetibeb Tesfaye**
 ## Go REST API Endpoints
 - GET /api/v1/health -> Health Check
 - GET /api/v1/student/profile -> Student Record
+
+
+## Transcript PDF Export
+- Automated official academic transcript builder
