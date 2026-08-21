@@ -78,3 +78,8 @@ Developed by **Yared Kinetibeb Tesfaye**
 - **GitHub**: [@yaya2127](https://github.com/yaya2127)
 - **LinkedIn**: [Yared Kinetibeb](https://www.linkedin.com/in/yared-kinetibeb-3b788b350/)
 - **Email**: kinetibebyared@gmail.com
+
+
+## Go REST API Endpoints
+- GET /api/v1/health -> Health Check
+- GET /api/v1/student/profile -> Student Record
