@@ -95,3 +95,7 @@ Developed by **Yared Kinetibeb Tesfaye**
 
 ## JWT Authentication Middleware
 - Secure token validation
+
+
+## REST API Payload Schemas
+- Student profile JSON structure
