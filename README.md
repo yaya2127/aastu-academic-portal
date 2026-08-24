@@ -103,3 +103,5 @@ Developed by **Yared Kinetibeb Tesfaye**
 <!-- Go build cache config -->
 
 <!-- Routing performance tuning -->
+
+<!-- Contribution update: feat(models): add course prerequisite validation engine in models/course.go -->
