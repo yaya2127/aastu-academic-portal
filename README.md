@@ -87,3 +87,7 @@ Developed by **Yared Kinetibeb Tesfaye**
 
 ## Transcript PDF Export
 - Automated official academic transcript builder
+
+
+## GPA Calculation Engine
+- Weighted grade point average algorithm
