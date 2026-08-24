@@ -109,3 +109,5 @@ Developed by **Yared Kinetibeb Tesfaye**
 <!-- Contribution update: feat(handlers): add GPA breakdown summary handler in handlers/gpa_handler.go -->
 
 <!-- Contribution update: docs(readme): add REST API endpoint route table in README.md -->
+
+<!-- Contribution update: chore(ci): configure Go test timeout parameters in GitHub Actions workflow -->
