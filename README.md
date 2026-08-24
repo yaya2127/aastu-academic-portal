@@ -105,3 +105,5 @@ Developed by **Yared Kinetibeb Tesfaye**
 <!-- Routing performance tuning -->
 
 <!-- Contribution update: feat(models): add course prerequisite validation engine in models/course.go -->
+
+<!-- Contribution update: feat(handlers): add GPA breakdown summary handler in handlers/gpa_handler.go -->
