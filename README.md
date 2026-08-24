@@ -111,3 +111,5 @@ Developed by **Yared Kinetibeb Tesfaye**
 <!-- Contribution update: docs(readme): add REST API endpoint route table in README.md -->
 
 <!-- Contribution update: chore(ci): configure Go test timeout parameters in GitHub Actions workflow -->
+
+<!-- Contribution update: perf(db): optimize student academic history query indexing -->
