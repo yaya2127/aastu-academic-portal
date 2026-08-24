@@ -91,3 +91,7 @@ Developed by **Yared Kinetibeb Tesfaye**
 
 ## GPA Calculation Engine
 - Weighted grade point average algorithm
+
+
+## JWT Authentication Middleware
+- Secure token validation
