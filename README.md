@@ -76,7 +76,7 @@ docker-compose up --build
 Developed by **Yared Kinetibeb Tesfaye**
 - **Role**: 5th-Year Computer Engineering Senior Student at AASTU
 - **GitHub**: [@yaya2127](https://github.com/yaya2127)
-- **LinkedIn**: [Yared Kinetibeb](https://www.linkedin.com/in/yared-kinetibeb-3b788b350/)
+- **LinkedIn**: [Yared Kinetibeb](https://www.linkedin.com/in/yared-kinetibeb-704077301/)
 - **Email**: kinetibebyared@gmail.com
 
 
